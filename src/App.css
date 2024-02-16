@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Jost',sans-serif;
+}
+
+nav{
+    z-index: 10001 !important;
+}
+
+.gradientBg{
+    background: linear-gradient(99deg, #CDC9C3 100%, #dccfbe 0%);
+}
+
+.btnHome{
+    @apply py-5 px-12 bg-[#555555] font-semibold text-white text-lg rounded hover:bg-[#726a6a] transition-all duration-300;
+    
+}
+
+.menu-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  .menu-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .menu-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .menu-link {
+    display: block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Ligeramente visible para diferenciar cada elemento */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+  }
+
+  .menu-link:hover, .menu-link:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el fondo al hacer hover para indicar clickeabilidad */
+    transform: translateX(5px); /* Mueve ligeramente el elemento para dar sensación de interacción */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+  }
