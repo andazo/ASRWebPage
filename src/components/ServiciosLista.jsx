@@ -27,21 +27,21 @@ const ServiciosLista = () => {
             A partir de un producto especifico podemos incursionar en nuevas
             líneas
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg">
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Diversificación.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Apertura a nuevos mercados.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Variedad de consumidor.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Gama de productos para tu tienda.
             </li>
           </ul>
@@ -61,22 +61,22 @@ const ServiciosLista = () => {
             A través de nuestra empresa partner en EE.UU. Andean Group LLC,
             apoyamos a nuestros clientes para
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg">
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Obtención número FDA.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Crearse como sus propios importadores.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Agilidad en obtención de licencias.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
-              Agilidad en obtención de licencias.
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Export - Import Bank of the United States.
             </li>
           </ul>
           <div className="md:w-11/13 flex justify-center items-center mt-2">
@@ -95,22 +95,22 @@ const ServiciosLista = () => {
             Adaptación tablas nutricionales y empaques FDA & EU Compliant para
             exportar
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg">
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Adaptación tablas nutricionales y empaques.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               FDA & EU Compliant para exportación de productos.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Agilidad para la venta de productos comestibles.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
-              Agilidad para la venta de productos comestibles.
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Guía de regulaciones según el destino de exportación.
             </li>
           </ul>
           <div className="md:w-11/13 flex justify-center items-center">
@@ -130,26 +130,26 @@ const ServiciosLista = () => {
           <p className="text-secondary text-center my-5 text-lg">
             Más de 16 Marketplaces Desarrollados en EEUU, Chile, Costa Rica y Reino Unido
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg">
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Desarrollo de Marketplace propio.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Estudio de mercado y viabilidad para recomendar la estrategia
               correcta de precios.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Diseño especializado de tienda para cada emprendedor.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Capacitación en las herramientas de la operación de cada ecommerce.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Implementar estrategias de marketing digital que potencien las
               ventas de tu tienda.
             </li>
@@ -169,23 +169,23 @@ const ServiciosLista = () => {
           <p className="text-secondary text-center my-5 text-lg">
             Ingreso al mercado destino cómo, cuándo, dónde y con quién hacerlo
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg">
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Diseñamos la estrategia comercial para ingresar al mercado
               internacional.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Hacemos los estudios de viabilidad y logística.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Acompañamos paso por paso, desde el envío de productos hasta el
               lanzamiento de marca.
             </li>
             <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-4 h-4" />
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
               Traspasamos nuestros contactos de los principales agentes de la
               cadena, generando la red y el conocimiento necesario para la
               venta.

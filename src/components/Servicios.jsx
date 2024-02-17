@@ -4,11 +4,11 @@ import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 
 const Servicios = () => {
     return(
-        <div className="my-24 md:px-14 px-4 max-w-screen-2xl mx-auto mt-40">
+        <div className="my-24 md:px-14 px-4 max-w-screen-2xl mx-auto mt-32">
             <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
                 <div className="lg:w-1/4">
                     <h3 className="text-5xl text-secondary font-bold lg:w-3/4 mb-3">¿Cómo te podemos ayudar?</h3>
-                    <p className="text-lg text-secondary mt-6">En ASR Boost, potenciamos el valor de tu marca y facilitamos tu entrada en nuevos mercados. 
+                    <p className="text-xl text-secondary mt-6 text-justify mr-6">En ASR Boost, potenciamos el valor de tu marca y facilitamos tu entrada en nuevos mercados. 
                         Te enseñamos a liderar tu negocio de exportación con estrategias a medida y capacitación continua, asegurando 
                         tu éxito y autonomía en el mercado internacional.
                     </p>
