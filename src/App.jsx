@@ -6,17 +6,21 @@ import ServiciosExperiencia from './components/ServiciosExperiencia'
 import ServiciosLista from './components/ServiciosLista'
 import Footer from './shared/Footer'
 import Contact from './components/Contact'
+import ServicePlans from './components/ServicePlans'
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <Servicios/>
-      <ServiciosExperiencia/>
-      <ServiciosLista/>
-      <Contact/>
-      <Footer/>
+      <div className='bg-[#f5f4f2]'>
+        <Navbar/>
+        <Home/>
+        <Servicios/>
+        <ServiciosExperiencia/>
+        <ServiciosLista/>
+        <ServicePlans/>
+        <Contact/>
+        <Footer/>
+      </div>
     </>
   )
 }

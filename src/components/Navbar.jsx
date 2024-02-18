@@ -34,8 +34,9 @@ const Navbar = () => {
   const navItems = [
     { link: "Inicio", path: "home" },
     { link: "Servicios", path: "services" },
+    { link: "Planes", path: "planes" },
     { link: "Contacto", path: "contact" },
-    { link: "Quienes somos", path: "about" },
+    //{ link: "Quienes somos", path: "about" },
   ];
 
   return (

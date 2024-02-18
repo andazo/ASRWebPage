@@ -4,11 +4,13 @@ import Licencia from "../assets/FDAap.png";
 import LicenciaComida from "../assets/NutFacts.png";
 import Amazon from "../assets/marketPlace.png";
 import Bus from "../assets/BusinessIllustration.png";
+import {motion} from "framer-motion";
+import { fadeIn } from "../variants";
 
 const ServiciosLista = () => {
   return (
-    <div className="md:px-14 p-4 max-w-s mx-auto py-10 mt-44" id='services'>
-      <div className="text-center">
+    <div className="md:px-14 p-4 max-w-s mx-auto py-10 mt-44" id="services">
+      <motion.div variants={fadeIn("down",0.2)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.2}} className="text-center">
         <h2 className="md:text-6xl text-3xl font-extrabold text-secondary mb-2">
           Servicios ASR Boost
         </h2>
@@ -16,119 +18,16 @@ const ServiciosLista = () => {
           Con nuestros servicios, diseñamos la estrategia que mejor se adapte a
           tu negocio y producto
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
-          <h3 className="text-3xl font-bold text-center text-secondary">
-            Desarrollo de productos
-          </h3>
-          <p className="text-secondary text-center text-lg my-5">
-            A partir de un producto especifico podemos incursionar en nuevas
-            líneas
-          </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Diversificación.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Apertura a nuevos mercados.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Variedad de consumidor.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Gama de productos para tu tienda.
-            </li>
-          </ul>
-          <div className="md:w-11/13 flex justify-center items-center">
-            <img
-              src={DesProd}
-              alt=""
-              className="object-fill h-60 w-80 rounded-3xl"
-            />
-          </div>
-        </div>
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
-          <h3 className="text-3xl font-bold text-center text-secondary">
-            Licencias
-          </h3>
-          <p className="text-secondary text-center my-5 text-lg">
-            A través de nuestra empresa partner en EE.UU. Andean Group LLC,
-            apoyamos a nuestros clientes para
-          </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Obtención número FDA.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Crearse como sus propios importadores.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Agilidad en obtención de licencias.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Export - Import Bank of the United States.
-            </li>
-          </ul>
-          <div className="md:w-11/13 flex justify-center items-center mt-2">
-            <img
-              src={Licencia}
-              alt=""
-              className="object-fill h-60 w-80 rounded-3xl"
-            />
-          </div>
-        </div>
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
-          <h3 className="text-3xl font-bold text-center text-secondary">
-            Packaging y Regulaciones
-          </h3>
-          <p className="text-secondary text-center my-5 text-lg">
-            Adaptación tablas nutricionales y empaques FDA & EU Compliant para
-            exportar
-          </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Adaptación tablas nutricionales y empaques.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              FDA & EU Compliant para exportación de productos.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Agilidad para la venta de productos comestibles.
-            </li>
-            <li className="flex gap-3 items-center">
-              <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Guía de regulaciones según el destino de exportación.
-            </li>
-          </ul>
-          <div className="md:w-11/13 flex justify-center items-center">
-            <img
-              src={LicenciaComida}
-              alt=""
-              className="object-fill h-60 w-80 rounded-3xl"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 mt-20 md:w-8/12 mx-auto">
+      <motion.div variants={fadeIn("up",0.2)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.2}} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
         <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
           <h3 className="text-3xl font-bold text-center text-secondary">
             Marketplace & E-commerce
           </h3>
           <p className="text-secondary text-center my-5 text-lg">
-            Más de 16 Marketplaces Desarrollados en EEUU, Chile, Costa Rica y Reino Unido
+            Más de 16 Marketplaces Desarrollados en EEUU, Chile, Costa Rica y
+            Reino Unido
           </p>
           <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
@@ -146,7 +45,7 @@ const ServiciosLista = () => {
             </li>
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Capacitación en las herramientas de la operación de cada ecommerce.
+              Capacitación en las herramientas de operación.
             </li>
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
@@ -159,6 +58,111 @@ const ServiciosLista = () => {
               src={Amazon}
               alt=""
               className="object-fill h-54 w-70 rounded-3xl"
+            />
+          </div>
+        </div>
+
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+          <h3 className="text-3xl font-bold text-center text-secondary">
+            Licencias
+          </h3>
+          <p className="text-secondary text-center my-5 text-lg">
+            A través de nuestra empresa partner en EE.UU. Andean Group LLC,
+            apoyamos a nuestros clientes para
+          </p>
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Facilitamos el registro FDA para exportar productos a EE.UU.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Orientación para actuar como tu propio importador.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Agilizamos la adquisición de licencias de exportación e importación.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Asesoría financiera con el Export-Import Bank de EE.UU.
+            </li>
+          </ul>
+          <div className="md:w-11/13 flex justify-center items-center">
+            <img
+              src={Licencia}
+              alt=""
+              className="object-fill h-60 w-80 rounded-3xl mt-10"
+            />
+          </div>
+        </div>
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+          <h3 className="text-3xl font-bold text-center text-secondary">
+            Packaging y Regulaciones
+          </h3>
+          <p className="text-secondary text-center my-5 text-lg">
+            Adaptación tablas nutricionales y empaques FDA & EU Compliant para
+            exportar
+          </p>
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Adaptamos tablas nutricionales y empaques para cumplimiento global.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Aseguramos conformidad con FDA y UE para exportaciones.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Agilizamos procesos para la comercialización de comestibles.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Ofrecemos guías regulatorias por destino de exportación.
+            </li>
+          </ul>
+          <div className="md:w-11/13 flex justify-center items-center">
+            <img
+              src={LicenciaComida}
+              alt=""
+              className="object-fill h-60 w-80 rounded-3xl"
+            />
+          </div>
+        </div>
+      </motion.div>
+      <motion.div variants={fadeIn("up",0.2)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.2}} className="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 mt-20 md:w-8/12 mx-auto">
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+          <h3 className="text-3xl font-bold text-center text-secondary">
+            Desarrollo de productos
+          </h3>
+          <p className="text-secondary text-center text-lg my-5">
+            A partir de un producto especifico podemos incursionar en nuevas
+            líneas
+          </p>
+          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Diversificamos tus productos basándonos en tu catálogo actual.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Abrimos puertas a nuevos mercados internacionales para ampliar tu presencia global.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Expandimos tu alcance al conectar con una amplia gama de perfiles de consumidores.
+            </li>
+            <li className="flex gap-3 items-center">
+              <img src={puntoVerde} alt="" className="w-3 h-3" />
+              Enriquecemos la oferta de tu tienda.
+            </li>
+          </ul>
+          <div className="md:w-11/13 flex justify-center items-center">
+            <img
+              src={DesProd}
+              alt=""
+              className="object-fill h-60 w-80 rounded-3xl mt-5"
             />
           </div>
         </div>
@@ -181,12 +185,12 @@ const ServiciosLista = () => {
             </li>
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Acompañamos paso por paso, desde el envío de productos hasta el
+              Acompañamiento paso por paso, desde el envío de productos hasta el
               lanzamiento de marca.
             </li>
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
-              Traspasamos nuestros contactos de los principales agentes de la
+              Compartimos nuestros contactos de los principales agentes de la
               cadena, generando la red y el conocimiento necesario para la
               venta.
             </li>
@@ -199,7 +203,7 @@ const ServiciosLista = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
