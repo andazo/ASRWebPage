@@ -44,9 +44,7 @@ const Navbar = () => {
       <nav className="bg-[#faf7f1] md:px-14  max-w-screen-3xl border-b mx-auto text-secondary fixed top-0 right-0 left-0 z-50">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex space-x-14 items-center">
-            <a href="/" className="text=2xl font-semibold flex items-center space-x-3">
-              <img src={logo} alt="Logo" className="w-32 inline-block" />
-            </a>
+            <img src={logo} alt="Logo" className="w-32 inline-block" />
             <ul className="md:flex space-x-12 hidden">
               {navItems.map(({ link, path }) => (
                 <Link activeClass="active" spy={true} smooth={true} offset={-100} key={link} to={path} className="block hover:text-[#887e7e] cursor-pointer hover:scale-105 duration-500">

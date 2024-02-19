@@ -64,7 +64,7 @@ const ServicePlans = () => {
             <h3 className={`text-3xl font-bold text-center text-secondary mt-5`}>
               {plan.name} Plan
             </h3>
-            <p className="text-[#948f75] text-center my-5 text-3xl font-bold">{plan.price}/mes</p>
+            <p className="text-[#8a96ac] text-center my-5 text-3xl font-bold">{plan.price}/mes</p>
             <p className="text-secondary my-5 text-lg text-justify">
               {plan.description}
             </p>
