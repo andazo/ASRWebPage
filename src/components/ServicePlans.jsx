@@ -64,7 +64,7 @@ const ServicePlans = () => {
             <h3 className={`text-3xl font-bold text-center text-secondary mt-5`}>
               {plan.name} Plan
             </h3>
-            <p className="text-[#948f75] text-center my-5 text-3xl font-bold">{plan.price}</p>
+            <p className="text-[#948f75] text-center my-5 text-3xl font-bold">{plan.price}/mes</p>
             <p className="text-secondary my-5 text-lg text-justify">
               {plan.description}
             </p>
@@ -76,7 +76,7 @@ const ServicePlans = () => {
         <h2 id="accordion-flush-heading-1">
           <button
             type="button"
-            className="flex items-center justify-center w-full py-5 font-medium text-xl text-secondary bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md transition duration-300 ease-in-out"
+            className="flex items-center justify-center w-full py-5 font-semibold text-xl text-secondary bg-[#e6e3df] hover:bg-[#a5a09a] rounded-lg shadow-md transition duration-300 ease-in-out"
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-controls="accordion-flush-body-1"
@@ -100,7 +100,7 @@ const ServicePlans = () => {
         {isOpen && (
           <div
             id="accordion-flush-body-1"
-            className="py-5 bg-gray-200 rounded-b-lg shadow-md transition duration-300 ease-in-out"
+            className="py-5 bg-[#f5f4f2] rounded-b-lg transition duration-300 ease-in-out"
             aria-labelledby="accordion-flush-heading-1"
           >
             <div className="flex flex-col items-center justify-center">

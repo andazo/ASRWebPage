@@ -20,8 +20,8 @@ const ServiciosLista = () => {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16 md:w-11/12 mx-auto">
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer bg-[#f2f5f7]">
           <h3 className="text-3xl font-bold text-center text-secondary">
             Marketplace & E-commerce
           </h3>
@@ -62,7 +62,7 @@ const ServiciosLista = () => {
           </div>
         </div>
 
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer bg-[#f2f5f7]">
           <h3 className="text-3xl font-bold text-center text-secondary">
             Licencias
           </h3>
@@ -96,7 +96,7 @@ const ServiciosLista = () => {
             />
           </div>
         </div>
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer bg-[#f2f5f7]">
           <h3 className="text-3xl font-bold text-center text-secondary">
             Packaging y Regulaciones
           </h3>
@@ -132,7 +132,7 @@ const ServiciosLista = () => {
         </div>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 mt-20 md:w-8/12 mx-auto">
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer bg-[#f2f5f7]">
           <h3 className="text-3xl font-bold text-center text-secondary">
             Desarrollo de productos
           </h3>
@@ -166,7 +166,7 @@ const ServiciosLista = () => {
             />
           </div>
         </div>
-        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer">
+        <div className="border-2 py-10 md:px-6 px-4 rounded-lg shadow-3xl hover:translate-y-4 transition-all duration-300 cursor-pointer bg-[#f2f5f7]">
           <h3 className="text-3xl font-bold text-center text-secondary">
             Retail & Crossborder
           </h3>
