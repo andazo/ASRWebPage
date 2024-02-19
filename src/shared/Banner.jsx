@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 const Banner = ({heading, subheading}) => {
   return (
     <div>
-      <div className="bg-[#CDC9C3] rounded-br-[80px] md:p-9 px-4 py-9">
+      <div className="bg-[#CDC9C3] rounded-br-[80px] md:p-9 px-4 py-9 mt-10">
         <motion.div variants={fadeIn("down",0.2)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.2}} className="flex flex-col justify-center items-center text-center space-y-8">
           <h2 className="text-5xl md:text-7xl font-bold text-secondary">
             {heading}

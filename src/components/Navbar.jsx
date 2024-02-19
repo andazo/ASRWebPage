@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#faf7f1] md:px-14 p-1 max-w-screen-3xl border-b mx-auto text-secondary fixed top-0 right-0 left-0 z-50">
+      <nav className="bg-[#faf7f1] md:px-14  max-w-screen-3xl border-b mx-auto text-secondary fixed top-0 right-0 left-0 z-50">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
           <div className="flex space-x-14 items-center">
             <a href="/" className="text=2xl font-semibold flex items-center space-x-3">

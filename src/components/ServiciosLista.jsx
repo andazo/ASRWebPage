@@ -29,7 +29,7 @@ const ServiciosLista = () => {
             Más de 16 Marketplaces Desarrollados en EEUU, Chile, Costa Rica y
             Reino Unido
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+          <ul className="mt-8 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
               Desarrollo de Marketplace propio.
@@ -57,7 +57,7 @@ const ServiciosLista = () => {
             <img
               src={Amazon}
               alt=""
-              className="object-fill h-54 w-70 rounded-3xl"
+              className="object-fill h-54 w-70 rounded-3xl mt-4"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ const ServiciosLista = () => {
             A través de nuestra empresa partner en EE.UU. Andean Group LLC,
             apoyamos a nuestros clientes para
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+          <ul className="mt-8 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
               Facilitamos el registro FDA para exportar productos a EE.UU.
@@ -104,7 +104,7 @@ const ServiciosLista = () => {
             Adaptación tablas nutricionales y empaques FDA & EU Compliant para
             exportar
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+          <ul className="mt-8 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
               Adaptamos tablas nutricionales y empaques para cumplimiento global.
@@ -140,7 +140,7 @@ const ServiciosLista = () => {
             A partir de un producto especifico podemos incursionar en nuevas
             líneas
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+          <ul className="mt-8 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
               Diversificamos tus productos basándonos en tu catálogo actual.
@@ -173,7 +173,7 @@ const ServiciosLista = () => {
           <p className="text-secondary text-center my-5 text-lg">
             Ingreso al mercado destino cómo, cuándo, dónde y con quién hacerlo
           </p>
-          <ul className="mt-4 space-y-4 px-4 text-lg text-secondary">
+          <ul className="mt-8 space-y-4 px-4 text-lg text-secondary">
             <li className="flex gap-3 items-center">
               <img src={puntoVerde} alt="" className="w-3 h-3" />
               Diseñamos la estrategia comercial para ingresar al mercado
