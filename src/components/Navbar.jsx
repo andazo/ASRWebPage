@@ -4,8 +4,11 @@ import { GrLanguage, GrDown, GrUp } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
 import { FaXmark } from "react-icons/fa6";
 import { Link } from "react-scroll";
+import { useTranslation } from 'react-i18next'; // Importa useTranslation
+import '../i18n'; // Asegúrate de importar tu configuración de i18n
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const dropdownRef = useRef(null); // Ref para el contenedor del dropdown
@@ -14,9 +17,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language); // Cambia el idioma
+    setIsLanguageDropdownOpen(false)
+  };
+
   const toggleLanguageDropdown = (e) => {
     e.preventDefault();
-    setIsLanguageDropdownOpen((prevState) => !prevState);
+    setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
   };
 
   // Cierra el dropdown al hacer clic fuera
@@ -32,10 +40,10 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { link: "Inicio", path: "home" },
-    { link: "Servicios", path: "services" },
-    { link: "Planes", path: "planes" },
-    { link: "Contacto", path: "contact" },
+    { link: t('Inicio'), path: "home" },
+    { link: t('Servicios'), path: "services" },
+    { link: t('Planes'), path: "planes" },
+    { link: t('Contacto'), path: "contact" },
     //{ link: "Quienes somos", path: "about" },
   ];
 
@@ -59,22 +67,19 @@ const Navbar = () => {
             <div className="relative" ref={dropdownRef}>
               <div onClick={toggleLanguageDropdown} className="flex items-center cursor-pointer hover:text-terniaryBlue">
                 <GrLanguage className="mr-2" />
-                <span>Idioma</span>
+                <span>{t('Idioma')}</span>
                 {isLanguageDropdownOpen ? <GrUp className="ml-1" /> : <GrDown className="ml-1" />}
               </div>
 
               {isLanguageDropdownOpen && (
                 <div className="absolute top-full left-0 mt-1 py-2 w-40 shadow-md bg-white rounded text-black z-10">
                   <ul>
-                    <li className="hover:bg-[#d6d3d3] p-2 text-center">Español</li>
+                  <li className="hover:bg-[#d6d3d3] p-2 text-center" onClick={() => changeLanguage('es')}>Spanish</li>
+                  <li className="hover:bg-[#d6d3d3] p-2 text-center" onClick={() => changeLanguage('en')}>English</li>
                   </ul>
                 </div>
               )}
             </div>
-
-            <button className="bg-[#555555] text-white py-2 px-4 transition-all duration-300 rounded hover:bg-[#726a6a]">
-              Registrarme
-            </button>
           </div>
 
           <div className="md:hidden">
